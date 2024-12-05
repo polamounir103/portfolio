@@ -1,0 +1,66 @@
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  padding: 20px 0;
+}
+
+.carousel-wrapper {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+}
+
+.carousel-item {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.carousel-item > h2 {
+  font-weight: 600;
+}
+
+.circles-nav {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+}
+.circles-nav .circle-nav {
+  width: 20px;
+  height: 20px;
+  background-color: #93ddfd;
+  border-radius: 50%;
+}
+
+.circles-nav .circle-nav.active {
+  background-color: #000;
+}
+
+.skills-group {
+  padding: 50px 20px 50px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: #b7e1f363;
+  border-radius: 20px;
+}
+.skills-list {
+}
+.skill-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.skill-svg {
+  width: 50px !important;
+  height: 50px !important;
+}

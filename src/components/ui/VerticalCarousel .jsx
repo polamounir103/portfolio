@@ -92,21 +92,16 @@ const VerticalCarousel = () => {
     },
   ];
 
-  const handleScroll = (i) => {
-    setCurrentIndex(i);
-  };
-
   return (
     <>
       <div className="flex flex-col gap-5 items-center justify-center">
         {skillsSections.map((item, index) => (
-          <div className="skills-group w-full" key={index}>
+          <div className="skills-group" key={index}>
             <div className="flex items-end gap-2">
               <h2 className="text-3xl">{item.name}</h2>
               {item.name === "BackEnd" && (
                 <>
-                  <span className="text-sm text-gray-500">
-                    {" "}
+                  <span className="text-sm text-gray-900">
                     just have the knowlage
                   </span>
                 </>

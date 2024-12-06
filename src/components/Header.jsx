@@ -31,17 +31,17 @@ function Header({ isSmall }) {
   const socialLinks = [
     {
       name: "linkedin",
-      href: "",
+      href: "https://www.linkedin.com/in/pola-mounir-samir-7954b92b6/",
       component: (hovered) => <LinkedinSvg hovered={hovered} />,
     },
     {
       name: "github",
-      href: "",
+      href: "https://github.com/polamounir103",
       component: (hovered) => <GithubSvg hovered={hovered} />,
     },
     {
       name: "facebook",
-      href: "",
+      href: "https://www.facebook.com/pola.mounir.1103",
       component: (hovered) => <FacebookSvg hovered={hovered} />,
     },
   ];
@@ -96,6 +96,7 @@ function Header({ isSmall }) {
         <button
           className="text-gray-900 bg-slate-200 p-2 rounded-lg text-2xl"
           onClick={showHeader}
+          name="header-toggler"
         >
           <BsListNested />
         </button>

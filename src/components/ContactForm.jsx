@@ -25,7 +25,7 @@ function ContactForm() {
           </div>
         </div>
         <div className="flex flex-col grow">
-          <label htmlFor="email">Subject</label>
+          <label htmlFor="subject">Subject</label>
           <input
             type="text"
             id="subject"
@@ -46,7 +46,7 @@ function ContactForm() {
         <div className="flex justify-end gap-3">
           <button
             type="submit"
-            className="py-3 px-5 bg-sky-400 text-white rounded-md hover:bg-sky-500 transition duration-300"
+            className="py-3 px-5 bg-sky-600 text-white rounded-md hover:bg-sky-500 transition duration-300"
           >
             Send Message
           </button>

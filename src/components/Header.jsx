@@ -66,7 +66,11 @@ function Header({ isSmall }) {
                   onMouseEnter={() => setHoveredIcon(link.name)}
                   onMouseLeave={() => setHoveredIcon(null)}
                 >
-                  <a href={link.href} target="_blank" rel="noopener noreferrer">
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    aria-label={`${link.name} link`}
+                  >
                     {link.component(hoveredIcon === link.name)}
                   </a>
                 </li>
@@ -90,17 +94,17 @@ function Header({ isSmall }) {
             </ul>
           </nav>
         </div>
-      <div
-        className={`${!isSmall && "hidden"} fixed left-full top-10`}
-      >
-        <button
-          className="text-gray-900 bg-slate-200 p-2 rounded-lg text-2xl"
-          onClick={showHeader}
-          name="header-toggler"
-        >
-          <BsListNested />
-        </button>
-      </div>
+        <div className={`${!isSmall && "hidden"} fixed left-full top-10`}>
+          <button
+            className="text-gray-900 bg-slate-200 p-2 rounded-lg text-2xl"
+            onClick={showHeader}
+            name="header-toggler"
+            id="headerToggler"
+            title="Header toggler"
+          >
+            <BsListNested />
+          </button>
+        </div>
       </header>
     </>
   );

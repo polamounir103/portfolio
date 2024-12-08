@@ -1,4 +1,4 @@
-import photo from "../assets/images/photo.jpeg";
+import photo from "../assets/images/me.png";
 import SectionTitle from "./shared/SectionTitle";
 export default function AboutMe() {
   const myInfo = [

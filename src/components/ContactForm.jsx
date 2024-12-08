@@ -46,7 +46,7 @@ function ContactForm() {
         <div className="flex justify-end gap-3">
           <button
             type="submit"
-            className="py-3 px-5 bg-sky-600 text-white rounded-md hover:bg-sky-500 transition duration-300"
+            className="py-3 px-5 bg-sky-900 text-white rounded-md hover:bg-sky-700 transition duration-300"
           >
             Send Message
           </button>

@@ -38,7 +38,7 @@ export default function Contact() {
             </div>
             <div>
               <div className="flex items-center justify-center">
-                <img src={mailImg} alt="mail" className="mail-img h-60 " />
+                <img src={mailImg} alt="mail" className="mail-img h-60 aspect-video" />
               </div>
             </div>
           </div>

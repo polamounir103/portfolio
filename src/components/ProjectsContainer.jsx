@@ -21,12 +21,12 @@ export default function ProjectsContainer() {
       link: "https://weather-app-pola-mounirs-projects.vercel.app/",
       image: WeatherApp,
     },
-    {
-      title: "EStore",
-      description: "A brief description of Project 2.",
-      link: "https://example.com/project2",
-      image: "project2.jpg",
-    },
+    // {
+    //   title: "EStore",
+    //   description: "A brief description of Project 2.",
+    //   link: "/",
+    //   image: "",
+    // },
   ];
   return (
     <div>

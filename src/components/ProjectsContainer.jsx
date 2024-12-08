@@ -34,7 +34,7 @@ export default function ProjectsContainer() {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="border rounded-lg overflow-hidden project-card "
+            className="border rounded-lg overflow-hidden project-card bg-white "
           >
             <div className="relative overflow-hidden w-full h-64">
               <img
@@ -52,7 +52,7 @@ export default function ProjectsContainer() {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-500"
+                className="text-blue-900"
               >
                 View Project
               </a>

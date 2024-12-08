@@ -32,17 +32,20 @@ export default function ProjectsContainer() {
     <div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {projects.map((project, index) => (
-          <div key={index} className="border rounded-lg overflow-hidden">
-            <div className="relative">
+          <div
+            key={index}
+            className="border rounded-lg overflow-hidden project-card "
+          >
+            <div className="relative overflow-hidden w-full h-64">
               <img
-                className="object-cover w-full h-64"
+                className="object-cover project-card-img"
                 src={project.image}
                 alt={project.title}
               />
-              <div className="absolute top-0 bottom-0 left-0 right-0 bg-gray-400 bg-opacity-0 hover:bg-opacity-25"></div>
+              {/* <div className="absolute top-0 bottom-0 left-0 right-0 bg-gray-400 bg-opacity-0 hover:bg-opacity-25"></div> */}
             </div>
 
-            <div className="p-4 bg-white rounded-md shadow-md">
+            <div className="p-4 bg-white rounded-md shadow-md border-t border-t-zink-300">
               <h3 className="text-xl font-bold">{project.title}</h3>
               <p>{project.description}</p>
               <a

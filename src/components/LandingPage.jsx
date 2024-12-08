@@ -1,4 +1,3 @@
-import Spline from "@splinetool/react-spline";
 function LandingPage() {
   return (
     <main className="land-page relative" id="main">

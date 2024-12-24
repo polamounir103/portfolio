@@ -1,3 +1,4 @@
+import cv from "../assets/files/pola_mounir_cv.pdf";
 function LandingPage() {
   return (
     <main className="land-page relative" id="main">
@@ -9,7 +10,10 @@ function LandingPage() {
             <h2 className="text-5xl">Web Developer</h2>
           </div>
           <div>
-            <a href="#" className="text-2xl border-b border-stone-800">
+            <a
+              href={cv}
+              className="text-2xl border-b border-stone-800"
+            >
               Download Resume
             </a>
           </div>

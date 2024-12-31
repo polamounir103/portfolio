@@ -1,4 +1,4 @@
-import cv from "../assets/files/pola_mounir_cv.pdf";
+import cv from "../assets/files/cv.pdf";
 function LandingPage() {
   return (
     <main className="land-page relative" id="main">

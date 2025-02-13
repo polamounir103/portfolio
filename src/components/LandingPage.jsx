@@ -3,7 +3,7 @@ function LandingPage() {
   return (
     <main className="land-page relative" id="main">
       <div className="flex items-center w-full h-full lg:ps-96">
-        <div className="flex flex-col gap-10 text-stone-800">
+        <div className="flex flex-col gap-10 text-stone-800 ps-5 lg:ps-0">
           <div className="flex flex-col gap-3">
             <h2 className="text-5xl">Hello , I am </h2>
             <h2 className="text-7xl font-bold ps-2">Pola Mounir</h2>

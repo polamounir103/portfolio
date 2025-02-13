@@ -50,6 +50,8 @@ export default function AboutMe() {
               src={photo}
               alt="My_Photo"
               className=" rounded-2xl max-h-96 lg:max-h-full aspect-square"
+              loading="lazy"
+              
             />
           </div>
           <div className="col-span-5 lg:col-span-3 flex flex-col gap-5">

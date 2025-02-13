@@ -1,4 +1,4 @@
-import photo from "../assets/images/me.png";
+import photo from "../assets/images/photo.webp";
 import SectionTitle from "./shared/SectionTitle";
 export default function AboutMe() {
   const myInfo = [
@@ -44,20 +44,30 @@ export default function AboutMe() {
           improve user experiences, I am seeking to create visually attractive,
           and high-performance web applications.
         </p>
-        <div className="flex flex-col lg:flex-row gap-10">
-          <img src={photo} alt="My_Photo" />
-          <div className="flex flex-col gap-5">
+        <div className="grid grid-cols-5 gap-10">
+          <div className="col-span-5 lg:col-span-2 flex justify-center items-center rounded-full overflow-hidden ">
+            <img
+              src={photo}
+              alt="My_Photo"
+              className=" rounded-2xl max-h-96 lg:max-h-full aspect-square"
+            />
+          </div>
+          <div className="col-span-5 lg:col-span-3 flex flex-col gap-5">
             <div>
               <h2 className="text-3xl">Front End Developer</h2>
             </div>
-            <ul>
+            <ul className="ps-5 md:ps-0">
               {myInfo.map((info, index) => (
                 <li
                   key={index}
-                  className="py-3 flex items-center gap-2 about-info-item"
+                  className="py-3 gap-2 about-info-item grid grid-cols-4"
                 >
-                  <span className="text-2xl">{info.title} : </span>
-                  <span className="text-xl">{info.content}</span>
+                  {/* <span className="col-span-1 text-xl lg:text-2xl">
+                    {info.title} :{" "}
+                  </span> */}
+                  <span className="col-span-3 text-xl lg:text-xl">
+                    {info.content}
+                  </span>
                 </li>
               ))}
             </ul>
